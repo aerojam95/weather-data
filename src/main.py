@@ -45,4 +45,4 @@ if __name__ == "__main__":
     # Parsed values
     parser = argparse.ArgumentParser(description="")
     
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
