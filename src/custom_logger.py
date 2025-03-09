@@ -66,22 +66,18 @@ def get_custom_logger(yaml_config_file_path: str):
 
     except FileNotFoundError as fe:
         setup_logger.critical(
-            "FileNotFoundError: the logging configuration file was not" \
-            f" found: {fe}"
+            f"FileNotFoundError: {fe}"
         )
         raise
 
     except yaml.YAMLError as ye:
         setup_logger.critical(
-            "YAMLError: there was an issue parsing the YAML configuration" \
-            f" file: {ye}"
+            f"YAMLError: {ye}"
         )
         raise
 
     except Exception as e:
         setup_logger.error(
-            f"Error: unexpected error occurred in custom_logger: {e}"
+            f"Error: {e}"
         )
-        raise RuntimeError(
-            f"RuntimeError: unexpected error occurred in custom_logger: {e}"
-        ) from e
+        raise
