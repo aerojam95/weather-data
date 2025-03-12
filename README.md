@@ -19,6 +19,8 @@ The Weather Data API exposes three endpoints to retrieve weather data.
 
 The weather data is sourced from various publicly available weather APIs, for locations around Europe. The data includes temperature, location, date, and time. There are plenty of historic data available for those needing siginificant data for long term trends, as well as a high frequency of measurements for volume. 
 
+Extract the data from the `data_small.zip` file into a directory called `data` at the root of the project in order to have the code to generate the web application to run correctly as is.
+
 ## Code
 
 ### Python virtual environment
