@@ -2,12 +2,23 @@
 # Modules
 # =============================================================================
 
+# Python
+import os
+
 # Third-party
 import pytest
 from flask import Flask
 
 # Testing
-from routes import init_routes
+from src.routes import init_routes
+
+# =============================================================================
+# Variables
+# =============================================================================
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+SRC_DIR = os.path.join(BASE_DIR, "..", "src")
+TEMPLATE_DIR = os.path.join(SRC_DIR, "templates")
 
 # =============================================================================
 # Tests
@@ -21,7 +32,7 @@ def client():
     Yields:
         FlaskClient: A test client to simulate HTTP requests
     """
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder=TEMPLATE_DIR)
     app.config["TESTING"] = True
     init_routes(app)
     

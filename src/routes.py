@@ -23,7 +23,7 @@ logger = get_custom_logger("configurations/logger.yaml")
 # =============================================================================
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-DATA_DIR = os.path.join(BASE_DIR, "../data")
+DATA_DIR = os.path.join(BASE_DIR, "../data_small")
 
 
 # =============================================================================

@@ -21,7 +21,7 @@ DEBUG = True
 # =============================================================================
 
 logger = get_custom_logger("configurations/logger.yaml")
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")
 init_routes(app)
 
 # =============================================================================
