@@ -1,7 +1,9 @@
 # Weather data API
+
 A web-application that includes a REST API for weather data and a dashboard for visualisation 
 
 ## Table of Contents
+
 - [API](#api)
 - [Data](#data)
 - [Code](#code)
@@ -19,7 +21,7 @@ A web-application that includes a REST API for weather data and a dashboard for 
 
 Before using the programme it is best to setup and start a Python virtual environment in order to avoid potential package clashes using the [requirements](requirements.txt) file:
 
-```
+```BASH
 # Navigate into the data project directory
 
 # Create a virtual environment
@@ -38,3 +40,5 @@ deactivate
 ### Programme Execution
 
 ### Using API endpoints
+
+Endpoints
