@@ -175,3 +175,7 @@ weather-data/
 
 # log files
 *.log
+
+# Non-compressed data
+data/
+data_small/
